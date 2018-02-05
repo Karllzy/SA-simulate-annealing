@@ -14,3 +14,6 @@ I am now trying to visualize the calculation process
 (The coordinates of 52 cities are given in the program.
 
 52个城市的坐标已在程序中给出。)
+
+Reference:
+卓金武，Matlab在数学建模中的应用[M].北京.北京航空航天大学出版社，111-120

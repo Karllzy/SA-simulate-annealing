@@ -1,9 +1,9 @@
 clear	
 	clc
-    %% 初始控制参数赋值以及
-	a = 0.99;	            % 温度衰减函数的参数
-	t0 = 97;                % 设定初值温度
-    tf = 3;                 % 终止温度
+    %% 初始控制参数赋值
+	a = 0.99;	        % 温度衰减函数的参数The parameters of the temperature decay function.
+	t0 = 97;                % 设定初值温度Set initial temperature
+        tf = 3;                 % 终止温度final temperature
 	Markov_length = 10000;	% Markov链长度
    %% 输入数据
 	coordinates = [
@@ -92,7 +92,11 @@ clear
 			end
 		end
 		t=t.*a;		% 控制参数t（温度）减少为原来的a倍
-        
+                plot (coordinate(:,1),coordinate(:,2),'MarkerSize',20)
+		hold on
+		for i=1:amount
+			plot(corrdinate(sol_current(i)),corrdinate(sol_current(i+1)))
+		end
 	end
 
 	disp('最优解为：')
